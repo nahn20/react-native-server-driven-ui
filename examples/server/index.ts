@@ -1,3 +1,4 @@
+import helloName from "./routes/hello-name";
 import helloWorld from "./routes/hello-world";
 
 Bun.serve({
@@ -8,6 +9,10 @@ Bun.serve({
 			case "/hello-world":
 				if (req.method === "GET") {
 					return await helloWorld(req);
+				}
+			case "/hello-name":
+				if (req.method === "GET") {
+					return await helloName(req);
 				}
 			default:
 				return new Response("Not found", { status: 404 });
