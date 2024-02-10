@@ -9,6 +9,7 @@ declare namespace JSX {
     type Element = RenderedSDUI;
 }
 export { JSX };
-export declare const jsx: (sduiComponent: any, props: Record<string, any>) => any;
-export declare const jsxs: (sduiComponent: any, props: Record<string, any>) => any;
-export declare const jsxDEV: (sduiComponent: any, props: Record<string, any>) => any;
+export declare const jsx: (sduiComponent: any, props: Record<string, any>) => RenderedSDUI;
+export declare const jsxs: (sduiComponent: any, props: Record<string, any>) => RenderedSDUI;
+export declare const jsxDEV: (sduiComponent: any, props: Record<string, any>) => RenderedSDUI;
+export declare const Fragment: (sduiComponent: any, props: Record<string, any>) => RenderedSDUI;

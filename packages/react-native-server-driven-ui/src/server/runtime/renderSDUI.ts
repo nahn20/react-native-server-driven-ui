@@ -1,8 +1,12 @@
-const renderSDUI = (sduiComponent: any, props: Record<string, any>) => {
-	// Case of <></>
-	if (!sduiComponent) {
-		// This should be possible to implement, just haven't gotten around to it
-		throw new Error("<></> is not supported yet");
+import { RenderedSDUI } from "../../types";
+
+const renderSDUI = (
+	sduiComponent: any,
+	props: Record<string, any>,
+): RenderedSDUI => {
+	// Case of a fragment
+	if (sduiComponent.children && !sduiComponent.id) {
+		throw new Error("Fragment are not currently supported");
 	}
 	if (!sduiComponent.id) {
 		if (typeof sduiComponent === "function") {

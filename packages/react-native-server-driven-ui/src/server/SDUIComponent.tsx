@@ -25,16 +25,6 @@ abstract class SDUIComponent<
 	constructor(props: RecursiveReplaceReactWithMockComponent<P>) {
 		this.props = props;
 	}
-
-	// There's a lot of stuff that VSCode expects of a component. These are fillers so that it doesn't complain.
-	readonly context = {};
-	readonly setState = (state: any) => {};
-	readonly forceUpdate = () => {};
-	readonly render = () => {
-		return null;
-	};
-	readonly state = {};
-	readonly refs = {};
 }
 
 export default SDUIComponent;

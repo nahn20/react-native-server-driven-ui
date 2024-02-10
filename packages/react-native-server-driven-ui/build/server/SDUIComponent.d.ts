@@ -7,11 +7,5 @@ declare abstract class SDUIComponent<P extends Record<string, any> & {
 }> {
     readonly props: Readonly<RecursiveReplaceReactWithMockComponent<P>>;
     constructor(props: RecursiveReplaceReactWithMockComponent<P>);
-    readonly context: {};
-    readonly setState: (state: any) => void;
-    readonly forceUpdate: () => void;
-    readonly render: () => null;
-    readonly state: {};
-    readonly refs: {};
 }
 export default SDUIComponent;

@@ -10,10 +10,9 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 var renderSDUI = function (sduiComponent, props) {
-    // Case of <></>
-    if (!sduiComponent) {
-        // This should be possible to implement, just haven't gotten around to it
-        throw new Error("<></> is not supported yet");
+    // Case of a fragment
+    if (sduiComponent.children && !sduiComponent.id) {
+        throw new Error("Fragment are not currently supported");
     }
     if (!sduiComponent.id) {
         if (typeof sduiComponent === "function") {

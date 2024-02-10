@@ -28,3 +28,4 @@ export { JSX };
 export const jsx = renderSDUI;
 export const jsxs = renderSDUI;
 export const jsxDEV = renderSDUI;
+export const Fragment = renderSDUI;
