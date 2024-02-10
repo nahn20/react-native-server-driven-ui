@@ -1,0 +1,25 @@
+{
+	"name": "react-native-server-driven-ui",
+	"exports": {
+		".": "./build/index.js",
+		"./client": "./build/client/index.js",
+		"./server": "./build/server/index.js",
+		"./server/react-native": "./build/server/react-native/index.js",
+		"./jsx-runtime": "./build/server/runtime/jsx-runtime.js",
+		"./jsx-runtime.d.ts": "./build/server/runtime/jsx-runtime.d.ts",
+		"./jsx-dev-runtime": "./build/server/runtime/jsx-dev-runtime.js",
+		"./jsx-dev-runtime.d.ts": "./build/server/runtime/jsx-dev-runtime.d.ts"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "bunx tsc"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.55"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0",
+		"react": "^18.2.0",
+		"react-native": "^0.72.0"
+	}
+}

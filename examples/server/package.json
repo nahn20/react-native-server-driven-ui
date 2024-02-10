@@ -1,0 +1,14 @@
+{
+	"name": "server",
+	"module": "index.ts",
+	"type": "module",
+	"dependencies": {
+		"react-native-server-driven-ui": "workspace:*"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}

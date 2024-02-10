@@ -1,0 +1,13 @@
+{
+	"type": "module",
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"workspaces": [
+		"packages/*",
+		"examples/*"
+	]
+}
